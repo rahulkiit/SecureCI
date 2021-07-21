@@ -9,19 +9,7 @@ on:
     types: [started]
 
 jobs:
-  name: Semgrep
-
-on:
-  # Scan changed files in PRs, block on new issues only (existing issues ignored)
-  pull_request: {}
-
-  # Scan all files on branches, block on any issues
-  # push:
-  #   branches: ["master", "main"]
-
-jobs:
   semgrep:
-    name: Scan
     runs-on: ubuntu-latest
     # Skip any PR created by dependabot to avoid permission issues
     if: (github.actor != 'dependabot[bot]')
