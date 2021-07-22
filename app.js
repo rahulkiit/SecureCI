@@ -13,6 +13,7 @@ var init_db = require('./model/init_db');
 var login = require('./routes/login');
 var products = require('./routes/products');
 var aws_key = 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY';
+var AWS_KEY1 = 'AKIALALEMEL33243OLIAE';
 
 
 var app = express();
